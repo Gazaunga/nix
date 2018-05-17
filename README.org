@@ -1,0 +1,8 @@
+* NixOS
+** Modular Setup
+
+#+begin_example
+ln -s ~/.nix/*.nix /etc/nixos/*.nix
+#+end_example
+
+
