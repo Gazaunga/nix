@@ -1,6 +1,7 @@
 * NixOS
 ** Modular Setup
 
+Link user config to system config
 #+begin_example
 ln -s ~/.nix/*.nix /etc/nixos/*.nix
 #+end_example
