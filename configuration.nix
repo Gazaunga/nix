@@ -14,3 +14,9 @@ networking.hostId = "12345";
       ./exwm.nix
       ./qemu.nix
     ];
+
+environment.systemPackages = with pkgs; [
+  #pkg
+  #pkg
+  #pkg
+];
