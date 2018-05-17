@@ -13,10 +13,24 @@ networking.hostId = "12345";
       /etc/nixos/hardware-configuration.nix  # Include the results of the hardware scan.
       ./exwm.nix
       ./qemu.nix
+      ./packages.nix
     ];
 
-environment.systemPackages = with pkgs; [
-  #pkg
-  #pkg
-  #pkg
-];
+services = {
+    nixosManual.showManual = true;
+    locate.enable = true;
+    ntp.enable = true;
+    printing.enable = true;
+    };
+    
+    redshift = {
+      enable = true;
+      latitude = "39.290385";
+      longitude = "-76.612189";
+      temperature.day = 5700;
+      temperature.night = 4600;
+    };
+    ### who knows ##
+    windowManager.default = "exwm";
+    windowManager.exwm.enable = true;
+    
